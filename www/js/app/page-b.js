@@ -1,12 +1,12 @@
 define([
   'jquery',
-  'app/models/contactModel',
+  'app/models/pageBModel',
   'bootstrap'
 ],
 
 function ($, model) {
   'use strict';
-  
+
   $(function() {
     // Set the title for our module with the data
     // from our model
@@ -23,6 +23,6 @@ function ($, model) {
     $('[rel=popover]').popover({trigger: 'hover'});
 
     // Tooltip our 'loud' elements
-    $('.loud').tooltip({ title: 'Hello friend!'});
+    $('.loud').tooltip({ title: 'Hello B!'});
   });
 });

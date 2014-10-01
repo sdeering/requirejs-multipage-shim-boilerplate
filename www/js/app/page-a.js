@@ -1,6 +1,6 @@
 define([
   'jquery',
-  'app/models/aboutModel',
+  'app/models/pageAModel',
   'bootstrap'
 ],
 
@@ -20,6 +20,9 @@ function ($, model) {
       .attr('aria-valuenow', percent.substr(0, percent.length - 1));
 
     // Activate the bootstrap popover plugin
-    $('[rel=popover]').popover({ trigger: 'hover' });
+    $('[rel=popover]').popover({trigger: 'hover'});
+
+    // Tooltip our 'loud' elements
+    $('.loud').tooltip({ title: 'Hello A!'});
   });
 });

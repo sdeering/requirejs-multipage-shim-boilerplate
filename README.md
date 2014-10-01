@@ -1,6 +1,10 @@
-# [RequireJS-Multipage-Shim-Boilerplate](http://robdodson.me/blog/2012/11/18/a-require-dot-js-multipage-shimmed-site-how-to/)
+## Boostrap, SASS & Require.js Multipage Demo
 
-This boilerplate is designed to help teams get started with, or transition over to, RequireJS. A step-by-step guide is provided at [http://robdodson.me/blog/2012/11/18/a-require-dot-js-multipage-shimmed-site-how-to/](http://robdodson.me/blog/2012/11/18/a-require-dot-js-multipage-shimmed-site-how-to/)
+## Updates
+
+- Added SASS support
+- Added page specific SASS Styles
+- Added RequireJS Module Logging
 
 ## Features
 
@@ -8,6 +12,7 @@ This boilerplate is designed to help teams get started with, or transition over 
 - Bootstrap 3
 - jQuery 2.0.3
 - r.js optimized builds with Grunt
+
 
 ## Quick Start
 
@@ -31,6 +36,10 @@ npm install
 grunt
 ```
 
-## License
+Go to release version for viewing - ie ```www/release/```
 
-[MIT License](http://robdodson.mit-license.org/) © Rob Dodson
+
+## Licence
+
+- Forked From [RequireJS-Multipage-Shim-Boilerplate](https://github.com/robdodson/requirejs-multipage-shim-boilerplate)
+- [MIT License](http://robdodson.mit-license.org/) © Rob Dodson

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Require.js Multipage Demo: About</title>
+    <title>Boostrap, SASS & Require.js Multipage Demo: Page-a</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,22 +32,27 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li class="active"><a href="#">Page A</a></li>
+            <li><a href="./page-b.html">Page B</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
-    <div class="container">
-      <h1>This title will be replaced</h1>
-      <p>You're half-way through the tutorial. Hang in there!</p>
-      <a href="contact.html" class="btn btn-primary" rel="popover" data-content="Contact Us!" data-title="Hey now!">Contact</a>
+    <div id="page-a" class="container">
+      <h1></h1>
+      <p class="important-paragraph">
+        <span class="loud">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <span class="loud">incididunt</span> ut labore et dolore magna aliqua. <span class="loud">Ut</span> enim ad minim veniam, quis <span class="loud">nostrud</span> exercitation ullamco laboris nisi ut aliquip ex <span class="loud">ea</span> commodo consequat. Duis aute irure <span class="loud">dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu <span class="loud">fugiat</span> nulla pariatur. Excepteur sint occaecat cupidatat non <span class="loud">proident</span>, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="page-b.html" class="btn btn-primary">Page B</a>
       <div class="progress">
         <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
           <span class="sr-only">50% Complete</span>
         </div>
       </div>
+
+      <div class="feature"></div>
+
     </div> <!-- /container -->
 
     <!-- Le javascript
@@ -59,9 +64,9 @@
     // then load the app logic for this page.
     require(['./js/common'], function (common) {
       // ./js/common.js sets the baseUrl to be ./js/
-      // You can ask for 'app/main-about' here instead
-      // of './js/app/main-about'
-      require(['app/main-about']);
+      // You can ask for 'app/page-a' here instead
+      // of './js/app/page-a'
+      require(['app/page-a']);
     });
     </script>
   </body>

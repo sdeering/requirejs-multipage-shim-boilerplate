@@ -25,6 +25,17 @@ module.exports = function(grunt) {
           'www-release/css/bootstrap-responsive.css': 'www-release/css/bootstrap-responsive.css'
         }
       }
+    },
+
+    sass: {
+      dist: {
+        options: {
+          style: 'expanded'
+        },
+        files: {
+          'www-release/css/style.css': 'www-release/css/sass/style.scss'
+        }
+      }
     }
   });
 
@@ -32,8 +43,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'requirejs', 'cssmin']);
+  grunt.registerTask('default', ['clean', 'requirejs', 'sass', 'cssmin']);
 
 };

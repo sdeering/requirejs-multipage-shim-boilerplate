@@ -23,12 +23,12 @@ module.exports = {
     // must appear before the excluder in this file. Otherwise it will
     // get confused.
     {
-      name: 'app/main-about',
+      name: 'app/page-a',
       exclude: ['common']
     },
 
     {
-      name: 'app/main-contact',
+      name: 'app/page-b',
       exclude: ['common']
     }
   ]
