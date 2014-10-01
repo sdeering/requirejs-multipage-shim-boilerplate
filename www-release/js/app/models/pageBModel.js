@@ -1,0 +1,1 @@
+define(["./basicModel"],function(e){console.log("page-b model loaded.");var t=new e("Page B Dynamic Title","100%");return t});

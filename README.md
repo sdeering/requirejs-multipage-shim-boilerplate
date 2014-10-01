@@ -1,5 +1,7 @@
 ## Boostrap, SASS & Require.js Multipage Demo
 
+https://github.com/sdeering/requirejs-multipage-shim-boilerplate
+
 ## Updates
 
 - Added SASS support

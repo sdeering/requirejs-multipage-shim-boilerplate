@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Boostrap, SASS & Require.js Multipage Demo: Page-b</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Multipage Demo</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./page-a.html">Page A</a></li>
+            <li class="active"><a href="#">Page B</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div id="page-b" class="container">
+      <h1></h1>
+      <p class="important-paragraph">
+        <span class="loud">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <span class="loud">incididunt</span> ut labore et dolore magna aliqua. <span class="loud">Ut</span> enim ad minim veniam, quis <span class="loud">nostrud</span> exercitation ullamco laboris nisi ut aliquip ex <span class="loud">ea</span> commodo consequat. Duis aute irure <span class="loud">dolor</span> in reprehenderit in voluptate velit esse cillum dolore eu <span class="loud">fugiat</span> nulla pariatur. Excepteur sint occaecat cupidatat non <span class="loud">proident</span>, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="page-a.html" class="btn btn-primary">Page A</a>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+          <span class="sr-only">100% Complete</span>
+        </div>
+      </div>
+      <div class="feature"></div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/vendor/require.js"></script>
+    <script type="text/javascript">
+    // Load common code that includes config,
+    // then load the app logic for this page.
+    require(['./js/common'], function (common) {
+      // ./js/common.js sets the baseUrl to be ./js/
+      // You can ask for 'app/page-b' here instead
+      // of './js/app/page-b'
+      require(['app/page-b']);
+    });
+    </script>
+  </body>
+</html>
